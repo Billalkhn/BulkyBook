@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BulkyBook.DataAccess.Repository.IRepository
 {
-    public interface Isp_Call : IDisposable
+    public interface Isp_call : IDisposable
     {
         //StroredProcedure Calls
         //using Dapper for passing all parameters...

@@ -10,7 +10,7 @@ using System.Text;
 
 namespace BulkyBook.DataAccess.Repository
 {
-    public class SP__Call : Isp_Call
+    public class SP__Call : Isp_call
     {
 
         private readonly ApplicationDbContext _db;

@@ -18,7 +18,7 @@ namespace BulkyBook.DataAccess.Repository
 
         }
         public ICategoryRepository Category { get; private set; }
-        public Isp_Call SP_Call{ get; private set; }
+        public Isp_call SP_Call{ get; private set; }
 
         public SP__Call SP__Call => throw new NotImplementedException();
 
