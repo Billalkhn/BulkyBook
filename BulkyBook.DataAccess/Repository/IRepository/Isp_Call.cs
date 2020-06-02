@@ -17,7 +17,7 @@ namespace BulkyBook.DataAccess.Repository.IRepository
 
         IEnumerable<T> List<T>(string procedureName, DynamicParameters param = null);// Get allthe rows or data 
 
-        Tuple<IEnumerable<T1>,IEnumerable<T2>> List<T1,T2> (string procedureName, DynamicParameters param = null)//get two table
+        Tuple<IEnumerable<T1>, IEnumerable<T2>> List<T1, T2>(string procedureName, DynamicParameters param = null);//get two table
             
      }
 }
