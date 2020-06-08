@@ -13,14 +13,17 @@ namespace BulkyBook.DataAccess.Repository
         {
             _db = db;
             Category = new CategoryRepository(_db);
-            SP_Call = new SP__Call(_db);
+            CoverType = new CoverTypeRepository(_db);
+
+            SP_Call = new SP_Call(_db);
 
 
         }
         public ICategoryRepository Category { get; private set; }
+        public ICoverTypeRepository CoverType { get; private set; }
+
         public Isp_call SP_Call{ get; private set; }
 
-        public SP__Call SP__Call => throw new NotImplementedException();
 
         public void Dispose()
         {

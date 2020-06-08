@@ -7,7 +7,8 @@ namespace BulkyBook.DataAccess.Repository.IRepository
    public  interface IUnitOfWork : IDisposable
     {
         ICategoryRepository Category { get; }
-        SP__Call SP__Call { get; }
+        ICoverTypeRepository CoverType { get; }
+        Isp_call SP_Call { get; }
 
         void Save();
 
