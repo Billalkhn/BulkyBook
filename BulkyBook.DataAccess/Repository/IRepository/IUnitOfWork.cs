@@ -9,6 +9,7 @@ namespace BulkyBook.DataAccess.Repository.IRepository
         ICategoryRepository Category { get; }
         SP__Call SP__Call { get; }
 
+        void Save();
 
 
     }

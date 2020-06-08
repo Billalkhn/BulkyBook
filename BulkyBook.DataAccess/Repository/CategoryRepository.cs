@@ -11,6 +11,7 @@ namespace BulkyBook.DataAccess.Repository
     public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         private readonly ApplicationDbContext _db;
+
         public CategoryRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
@@ -22,7 +23,7 @@ namespace BulkyBook.DataAccess.Repository
             if (objFromDb != null)
             {
                 objFromDb.Name = category.Name;
-                _db.SaveChanges();
+
             }
         }
     }
